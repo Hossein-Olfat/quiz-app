@@ -1,8 +1,12 @@
 import './container.css';
+import { Quiz } from './quiz/quiz.js';
+
 function Container(){
     return (
+        
         <div className='container'>
-            I am container
+            <Quiz/>
+            
         </div>
     )
 }
