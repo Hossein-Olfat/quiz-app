@@ -1,12 +1,13 @@
 import './questionanswer.css';
-function Questionanswer(){
+function Questionanswer(props){
+    
     return (
         <div className='box-answer-container'>
             <div className='box-answer'>
 
-            <span className='number-answer'></span>
+            <span className='number-answer'>{props.number}</span>
                 
-            <p className='box-answer-content'></p>
+            <p onClick={(event)=>{props.checking(event)}} className='box-answer-content'>{props.answer_content}</p>
             
 
 
